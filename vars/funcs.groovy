@@ -3,7 +3,7 @@ String getImageNameWithTag(String REGISTRY, String APP_NAME) {
 }
 
 String getDateCommit() {
-  return getReturnedValue("git log -n 1 --pretty=format:%cd --date=format:%Y%m%d%H%M")
+  return getReturnedValue("git log -n 1 --pretty=format:%cd")
 }
 
 String getReturnedValue(String timestamp) {
